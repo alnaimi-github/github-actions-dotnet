@@ -1,12 +1,9 @@
-
-name: cI
-
+name: CI
 
 on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-
 
 jobs:
   build:
@@ -24,7 +21,5 @@ jobs:
       - name: Test with dotnet
         run: dotnet test --configuration Release
 
-      - name: publish with dotnet
-        run: dotnet publish H:\Development\My Learning\GithubActions\1.1\src\GitHubActionsDotNet.Api\GitHubActionsDotNet.Api.csproj --configuration Release -o ../publish
-  
-
+      - name: Publish with dotnet
+        run: dotnet publish "src/GitHubActionsDotNet.Api/GitHubActionsDotNet.Api.csproj" --configuration Release -o ../publish
