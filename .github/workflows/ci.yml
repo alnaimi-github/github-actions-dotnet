@@ -25,6 +25,6 @@ jobs:
         run: dotnet test --configuration Release
 
       - name: publish with dotnet
-        run: dotnet publish src/GithubActionsDotNet.Api/GithubActionsDotNet.Api.csproj --configuration Release -o ../publish
+        run: dotnet publish H:\Development\My Learning\GithubActions\1.1\src\GitHubActionsDotNet.Api\GitHubActionsDotNet.Api.csproj --configuration Release -o ../publish
   
 
