@@ -7,14 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActionsDotNet.Api.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActionsDotNet.Api", "src\GitHubActionsDotNet.Api\GitHubActionsDotNet.Api.csproj", "{1F7E9575-2EEE-4416-A25D-8109CE6C6D5C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{478307DD-5E9D-4977-9CB6-C43E05A3BBBD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{43D16774-A016-45AC-A89F-4D383BF22710}"
-	ProjectSection(SolutionItems) = preProject
-		pr-verify.yml = pr-verify.yml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{423B36B8-FC9F-41C9-B983-F5078724D562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3B2966CE-C5B1-43F6-8268-0FDAFF6F6A48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{720551BF-0FA1-40F1-82A5-0C17DE5FEA6F}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,7 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FCA83910-B216-453A-BECE-50FB8E588F4C} = {423B36B8-FC9F-41C9-B983-F5078724D562}
 		{1F7E9575-2EEE-4416-A25D-8109CE6C6D5C} = {423B36B8-FC9F-41C9-B983-F5078724D562}
-		{478307DD-5E9D-4977-9CB6-C43E05A3BBBD} = {423B36B8-FC9F-41C9-B983-F5078724D562}
-		{43D16774-A016-45AC-A89F-4D383BF22710} = {478307DD-5E9D-4977-9CB6-C43E05A3BBBD}
+		{720551BF-0FA1-40F1-82A5-0C17DE5FEA6F} = {3B2966CE-C5B1-43F6-8268-0FDAFF6F6A48}
 	EndGlobalSection
 EndGlobal
