@@ -24,3 +24,10 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Test with dotnet
+        run: dotnet test --configuration Release --no-build
+
+      - name: dotnet format
+        run: dotnet format -v detailed --verify-no-changes
+  
+
